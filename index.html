@@ -19,9 +19,10 @@
     -->
 
     <!--We can wrap the video tag around multiple, separate source tags. A basic video element, complete with multiple video sources may look like this:-->
-    <video width="600px" height="400px" autoplay controls>
-      <!--controls - the embedded video will always show video controls 
+    <!--controls - the embedded video will always show video controls 
           autoplay - the video will play on page load, rather than waiting for a user to click play-->
+    <!-- comments stop a video from working if they're in the tag-->
+    <video width="600px" height="400px" autoplay controls>
       <source src="https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.mp4" type="video/mp4">
       <source src="https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.ogg" type="video/ogg">
       Your browser does not support HTML5 video  <a href="https://browsehappy.com/" target="_blank">Please upgrade your browser</a>
