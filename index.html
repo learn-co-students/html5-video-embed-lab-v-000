@@ -11,6 +11,21 @@
     <h2>Realty Group</h2>
 
     <!-- your code here! See README.md for deliverables -->
+    
+<video controls autoplay width="600px" height="400px">
+  <source src="https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.mp4" type="video/mp4">
+  <source src="https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.ogg" type="video/ogg">
+  Your browser does not support HTML5 video  <a href="https://browsehappy.com/" target="_blank">Please upgrade your browser</a>
+</video>
+Why two sources? Compatibility! When HTML is rendered, the browser will try to load the first source. If it fails, it will fall back to the second source.
+
+All modern browsers support MP4 files. If we had the above video on a website, its likely that more than 99% of visitors will see the MP4 version. However, if a site visitor is still using an older version of a browser like Firefox, the MP4 file will fail to load. At this point, the OGG file will load instead. It is still useful to have an alternate video format for this reason.
+
+In addition to multiple sources, we can provide a fall back message. This message will appear to users in the event that they are using a browser that is so out of date, it doesn't support HTML5. For this, we add something like this:
+
+
+    
+    
 
   </body>
 </html>
