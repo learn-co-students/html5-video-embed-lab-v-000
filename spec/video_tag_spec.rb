@@ -40,9 +40,9 @@ RSpec.describe 'index.html' do
       expect(video.children[0].name).to_not be_nil, "No source tag was found nested within the video tag"
       expect(video.children[0].attributes["src"]).to_not be_nil, "No src attribute found on the first source tag"
       expect(video.children[0].attributes["type"].value).to be == "video/mp4", "The first source tag should have type set to 'video/mp4'"
-      expect(video.children[0].children[0].name).to_not be_nil, "No second source tag was found nested within the video tag"
-      expect(video.children[0].children[0].attributes["src"]).to_not be_nil, "No src attribute found on the second source tag"
-      expect(video.children[0].children[0].attributes["type"].value).to be == "video/ogg", "The second source tag should have type set to 'video/ogg'"
+      expect(video.children[1].name).to_not be_nil, "No second source tag was found nested within the video tag"
+      expect(video.children[1].attributes["src"]).to_not be_nil, "No src attribute found on the second source tag"
+      expect(video.children[1].attributes["type"].value).to be == "video/ogg", "The second source tag should have type set to 'video/ogg'"
 
     end
   end
